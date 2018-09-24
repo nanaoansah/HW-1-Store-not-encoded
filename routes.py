@@ -75,17 +75,9 @@ def make_prediction():
         #new_entered_li = list(np.float_(entered_li))
         #test_in = ','.join(entered_li)
 
-
-
-
-
-
-
-
         # ========== End of Part 2.3 ==========
 
         # make prediction
-        #print(model)
         prediction = model.predict(np.array(entered_li).reshape(1, -1))
         label = "$" + str(np.squeeze(prediction.round(2)))
         ##label = test_in
