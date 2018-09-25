@@ -61,5 +61,7 @@ if __name__ == '__main__':
 
     # ========== End of Part 2.2 ==========
     # start API
-    ##app.run(host='0.0.0.0', port=8000, debug=True)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)
+    # I used the line below during developing and testing because for some reaosn
+    # the line above would not run the app from my local host
+    #app.run(debug=True)
